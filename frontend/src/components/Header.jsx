@@ -37,8 +37,8 @@ const Header = () => {
           <Container>
                 <LinkContainer to='/'>
                 <Navbar.Brand>
-                  <img src={logo} alt="ProShop"/>
-                  ProShop</Navbar.Brand></LinkContainer>
+                  <img src={logo} alt="BakeShop"/>
+                  BakeShop</Navbar.Brand></LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className='ms-auto'>
