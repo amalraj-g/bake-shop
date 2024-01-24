@@ -12,7 +12,6 @@
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-
   },
   "author": "",
   "license": "ISC",
@@ -27,8 +26,9 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
     "concurrently": "^8.2.2",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.0",
     "nodemon": "^3.0.2"
   }
 }
