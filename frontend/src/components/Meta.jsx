@@ -14,7 +14,7 @@ const Meta = ({ title, description, keywords }) => {
 Meta.defaultProps = {
     title: "Welcome ",
     description: "We sell the best products for cheap",
-    keywords: "electronics, buy electronics, cheap electronics",
+    keywords: "cakes, buy cakess, cheap cakes",
 }
 
 export default Meta
