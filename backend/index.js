@@ -7,12 +7,12 @@ import productRoutes from "./routes/productRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
-import path from 'path';
 import { notFound, errorHandler } from './middleware/errorHandler.js';
+import path from 'path';
 import cors from 'cors';
 
 
-const port =process.env.PORT||5000;
+const port =process.env.PORT||3000;
 
 connectDB();
 
@@ -22,7 +22,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
-app.use(cors());
+const corsOptions ={
+    origin:'*', 
+    credentials:true,            
+    optionSuccessStatus:200,
+ }
+ 
+ app.use(cors(corsOptions))
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
