@@ -23,8 +23,7 @@ const HomeScreen = () => {
   
   return (
     <>
-     { !keyword ? <div style={{ width: '100%',height: '80%' ,maxWidth: '500px', maxHeight: '400px', margin: '0 auto ' }}>
-  {<ProductCarousel />}</div>: <Link to='/' className='btn btn-light mb-4'>Go Back</Link>}
+     { !keyword ? <ProductCarousel />: <Link to='/' className='btn btn-light mb-4 '>Go Back</Link>}
 
     <Meta title='Welcome'/>
      {isLoading ? (

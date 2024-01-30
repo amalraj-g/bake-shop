@@ -6233,6 +6233,7 @@ fieldset:disabled .btn {
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 .carousel-inner::after {
   display: block;
@@ -6253,6 +6254,7 @@ fieldset:disabled .btn {
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
+    
   }
 }
 
@@ -6260,6 +6262,12 @@ fieldset:disabled .btn {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  box-sizing: border-box;
+  padding-bottom: 20%;
+  max-height:28rem;
+  width: 100%;
+  max-width: 100rem;
+ 
 }
 
 .carousel-item-next:not(.carousel-item-start),
