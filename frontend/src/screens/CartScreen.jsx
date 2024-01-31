@@ -55,7 +55,7 @@ const CartScreen = () => {
                     <Link to={ `/product/${item._id}`}>{item.name}</Link>
                   </Col>
                   <Col md={2}>
-                    ${item.price}
+                    Rs.{item.price}
                   </Col>
                   <Col md={2}>
                     <Form.Control as='select' value={item.qty} onChange={(e) => addToCartHandler(item, Number(e.target.value))}>
@@ -84,7 +84,7 @@ const CartScreen = () => {
               <h2>
                 Subtotal ({ cartItems.reduce((acc, item) => acc + item.qty, 0)}) items
               </h2>
-              ${ cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
+              Rs.{ cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
             </ListGroup.Item>
             <ListGroup.Item>
               <Button type='button' className="btn-block" disabled={ cartItems.length === 0 } onClick={ checkoutHandler }>

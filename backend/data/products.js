@@ -1,14 +1,12 @@
 const products = [
     {
-      
-      
       name: 'Birthday chocolate cake',
       image: '/images/cake2.jpg',
       description:
         'The cake is very delicious to eat and wonderful to see it',
       brand: 'chocolate',
       category: 'cake',
-      price: 450,
+      price: 230,
       countInStock: 7,
       rating: 4.5,
       numReviews: 6,
@@ -21,7 +19,7 @@ const products = [
         ' The cake made up with mix of fruits and very tasty',
       brand: 'fruits',
       category: 'cake',
-      price: 500,
+      price: 400,
       countInStock: 7,
       rating: 4.0,
       numReviews: 8,
@@ -73,7 +71,7 @@ const products = [
          "pizza is a flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients ",
       brand: 'italian',
       category: 'pizza',
-      price: 429,
+      price: 290,
       countInStock: 5,
       rating: 4,
       numReviews: 11,
