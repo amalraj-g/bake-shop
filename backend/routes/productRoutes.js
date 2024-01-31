@@ -12,7 +12,7 @@ import {
 
 import checkObjectId from '../middleware/checkObjectId.js';
 //import products from './data/products.js';
-import Product from '../models/productModel.js';
+//import Product from '../models/productModel.js';
 import { protect, admin } from "../middleware/authMiddleware.js";
 /*import {
   getProducts,
